@@ -17,7 +17,7 @@ pipeline {
                 }
             }
         }
-        stage('Build and Test') {
+        stage('Build with Maven and Test with SonarQube') {
             steps {
                 sh 'ls -ltr'
                  //build the project and create a JAR file
